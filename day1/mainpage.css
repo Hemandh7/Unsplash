@@ -1,0 +1,114 @@
+#navbar{
+    width:100%;
+    height: 40px;
+    border: 0px solid red;
+    display:flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  #navbar>div{
+    width:5%;
+    border: 0px solid;
+  }
+  #navbar>img{
+    width: 100%;
+    text-align: center;
+  } 
+  #navbar>input{
+    border-radius: 20px;
+    width:45%;
+    font-size: 15px;
+    background: transparent;
+    padding: 10px 0px;
+   } 
+   #navbar>a{
+    color: gray;
+    text-decoration: none;
+   }
+   #navbar>a:hover{
+    color: black;
+   }
+   #navbar>button{
+    font-size: 15px;
+    background: transparent;
+    padding: 5px;
+    border: 1px solid;
+   }
+   #navbar2{
+    width:100%;
+    height: 40px;
+    border: 0px solid red;
+    display:flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+   #navbar2>a{
+    color: gray;
+    text-decoration: none;
+   }
+   #navbar2>a:hover{
+    color: black;
+   }
+   #gallery {
+    width: 100%;
+    height: 600px;
+    margin: 0px;
+    position: relative;
+} 
+ #gallery>img{
+    width:100%; 
+    height: 100%;
+ } 
+ #header{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 10;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    line-height: 30px;
+} 
+#header>h1{
+    font-size: 45px;
+}
+#header>p{
+    font-size: 20px;
+}
+.shade {
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.5);
+position: absolute;
+top: 0;
+left: 0;
+}
+.imggallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    
+
+}
+.imggallery>div{
+    display: flex;
+    flex-direction: column;
+    width:32.5%;
+    gap: 10px;
+    margin:10px;
+    
+}
+.imggallery>div>img{
+    width:100%;
+    
+}
+
+
+
+   
+
