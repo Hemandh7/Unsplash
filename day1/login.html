@@ -5,9 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+.logo{
+    width: 5%;
+    height:50px;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+.logo>img{
+    width:100%;
+}
+#head{
+    text-align: center;
+    padding: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+button{
+    width:40%;
+    font-size: 15px;
+    padding: 10px 0px;
+    background-color: #0D6CE3;
+   border: 0px;
+}
+button>a{
+    color: white;
+    text-decoration: none;
+}
+form{
+    display: grid;
+    width: 40%;
+    margin: auto;
+    text-align: left;
+}
+form>input{
+    font-size: 20px;
+    margin: 10px;
+    padding: 5px;
+}
+
+form>input:last-child{
+    background-color: black;
+    color: white;
+}
+#signup{
+ 
+    width:40%;
+    height:70px;
+    margin:auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+    </style>
 </head>
 <body>
-    <img src="https://unsplash.com/assets/core/logo-black-df2168ed0c378fa5506b1816e75eb379d06cfcd0af01e07a2eb813ae9b5d7405.svg" alt="">
-   <div></div> 
+    
+    <div class="logo">
+       
+    <a href="mainpage.html"><img src="https://unsplash.com/assets/core/logo-black-df2168ed0c378fa5506b1816e75eb379d06cfcd0af01e07a2eb813ae9b5d7405.svg" alt=""></a> 
+         
+    </div>
+    <div id="head">
+    <h1>Login</h1>
+    <p>Welcome back.</p>
+    <button><a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=779900868722692&kid_directed_site=0&app_id=779900868722692&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv5.0%2Fdialog%2Foauth%3Fclient_id%3D779900868722692%26redirect_uri%3Dhttps%253A%252F%252Funsplash.com%252Fusers%252Fauth%252Ffacebook%252Fcallback%26response_type%3Dcode%26scope%3Demail%26state%3D0aa5afa7e39b1d0fd9dfaac0403f34a1ad26a9f41b96a095%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dd57c23dc-7cb2-4029-b97e-c59f3019a750%26tp%3Dunspecified&cancel_url=https%3A%2F%2Funsplash.com%2Fusers%2Fauth%2Ffacebook%2Fcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D0aa5afa7e39b1d0fd9dfaac0403f34a1ad26a9f41b96a095%23_%3D_&display=page&locale=en_GB&pl_dbl=0">Login with facebook</a></button><br/>
+    <p>OR</p>
+    </div> 
+    <form action="">
+        <label for="">Email</label>
+        <input type="text">
+        <label for="">Password</label>
+        <input type="password">
+        <input type="submit" value="Login">
+    </form>
+    <div id="signup">
+        <p>Don’t have an account?<a href="signup.html"> Join Unsplash</a></p>
+    </div>
 </body>
 </html>
