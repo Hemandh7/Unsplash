@@ -76,7 +76,9 @@ else if(changeDir==0){
     }
 }
 
-newImg.setAttribute("src");
+
+
+newImg.setAttribute("src",galleryImages[calcNewImg].image.src);
 newImg.setAttribute("id","current-img");
 
 }
