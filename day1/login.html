@@ -74,9 +74,9 @@ form>input:last-child{
     </div> 
     <form action="">
         <label for="">Email</label>
-        <input type="text">
+        <input id="email" type="text">
         <label for="">Password</label>
-        <input type="password">
+        <input id="pass" type="password">
         <input type="submit" value="Login">
     </form>
     <div id="signup">
@@ -84,3 +84,21 @@ form>input:last-child{
     </div>
 </body>
 </html>
+<script>
+    document.querySelector("form").addEventListener("submit",formsubmit);
+    function formsubmit(){
+        if(document.getElementById("email").value==""){
+            alert("Please enter your email adress")
+            document.getElementById("email").style.borderColor="red";
+            return false;
+        } 
+        else if(document.getElementById("pass").value==""){
+            alert("Please enter your Password")
+            document.getElementById("pass").style.borderColor="red";
+            return false;
+        }
+        else{
+            alert("Login successful");
+        }  
+    }
+</script>
