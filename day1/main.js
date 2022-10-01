@@ -75,13 +75,13 @@ let calcNewImg;
 if(changeDir==1){
     calcNewImg=getLatestOpenedImg+1;
     if(calcNewImg>imglist.length){
-        calcNewImg=1;
+        calcNewImg=0;
     }
 }
 else if(changeDir==0){
     calcNewImg=getLatestOpenedImg-1;
     if(calcNewImg<1){
-        calcNewImg=imglist.length;
+        calcNewImg=imglist.length-1;
         
     }
 }
