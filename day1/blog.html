@@ -5,8 +5,303 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        h1{
+            font-size:45px ;
+            font-weight:700;
+        }
+        #header{
+            text-align: center;
+            line-height: 30px;
+        }
+        #header>h1{
+            font-size:60px ;
+            font-weight: bolder;
+        }
+        #header>p{
+            font-size: 30px;
+        }
+        #contain{
+            width: 95%;
+            height:auto;
+            margin:auto;
+            display: flex;
+        }
+        #contain>div{
+            width:45%;
+            margin: auto;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding:10px;
+            margin-bottom: 200px;
+        }
+        #contain>div>div:nth-child(1){
+            width: 100%;
+
+        }
+        #contain>div>div:nth-child(1)>img{
+            width: 100%;
+        }
+        #contain>div>div:nth-child(2){
+            width: 100%;
+
+        }
+        #gridtab{
+            display:grid;
+            width:95%;
+            height:auto;
+            
+            margin:auto;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+        #gridtab>div{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin: 10px;
+            padding: 10px;
+        }
+        #gridtab>div>div:nth-child(1){
+            width: 100%;
+
+        }
+        #gridtab>div>div:nth-child(1)>img{
+            width: 100%;
+        }
+        #gridtab>div>div:nth-child(2){
+            width: 100%;
+
+        }
+        #more{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }  
+        
+        #more>button{
+    font-size: 20px;
+    border-radius: 10px;
+    background:transparent;
+    color: gray;
+    border: 0px;
+    padding: 10px;
+    margin-bottom: 50px;
+    border: 1px dotted gray;
+ }
+footer{
+    width:100%;
+    margin:0px;
+    border-top: 1px solid gray;
+    display:flex;
+    gap:20px;
+    padding-top: 30px;
+   
+    align-items: center;
+}
+
+    </style>
 </head>
 <body>
+    <div>
+        <a href="mainpage.html"><img src="https://unsplash.com/assets/core/logo-black-df2168ed0c378fa5506b1816e75eb379d06cfcd0af01e07a2eb813ae9b5d7405.svg" alt=""></a> 
+     </div>
+<div id="header">
+   <h1>Unsplash Blog</h1>
+   <p>Stories from the community powering the internet’s visuals</p> 
+</div><br>
+<h1>Featured</h1>
+<div id="contain">
+    <div>
+        <div>
+        <img src="https://unsplash.com/blog/content/images/size/w1600/2022/09/A-look-back-at-August--Blog-.jpg" alt="">
+        </div>
+        <div>
+            <p>Announcements</p>
+            <h2>A Look Back on August</h2>
+            <p>Natalie Brennen </p><span>September 6,2022</span> 
+        </div>
+        
+    </div>
+    <div>
+        <div>
+        <img src="https://unsplash.com/blog/content/images/2022/03/Blog-compress-2.gif" alt="">
+        </div>
+        <div>
+            <p>Announcements</p>
+            <h2>Uplash for Good</h2>
+            <p>Uplash Team </p><span>March 2,2022</span> 
+        </div>
+    </div>
+</div>
+<h1>Latest from the team</h1>
+<div id="gridtab">
+<div>
+    <div>
+        <img src="https://unsplash.com/blog/content/images/2022/09/Food---Drink--Blog---1-.jpg" alt="">
+        </div>
+        <div>
+            <p>Topic Takeover</p>
+            <h2>Unsplash x Boxed Water™</h2>
+            <p>Natalie Brennen </p><span>September 30, 2022</span> 
+        </div>
+</div>
+<div>
+    <div>
+        <img src="https://unsplash.com/blog/content/images/size/w1600/2022/09/Banner-Winners--Blog-.jpg" alt="">
+        </div>
+        <div>
+            <p>Announcements</p>
+            <h2>Top 10: Girls VS. Stereotypes</h2>
+            <p>Natalie Brennen </p><span>September 26,2022</span> 
+        </div>
+</div>
+<div>
+    <div>
+        <img src="https://unsplash.com/blog/content/images/2022/08/Travel-Samsung--Blog---1--1.jpg" alt="">
+        </div>
+        <div>
+            <p>Announcements</p>
+            <h2>Win a Samsung Portable SSD T7 Shield</h2>
+            <p>Natalie Brennen </p><span>September 6,2022</span> 
+        </div>
+</div>
+<div>
+    <div>
+        <img src="https://unsplash.com/blog/content/images/size/w1600/2022/08/lazycolelctionview-2.jpg" alt="">
+        </div>
+        <div>
+            <p>iOS</p>
+            <h2>Open-sourcing our photo layout for SwiftUI</h2>
+            <p>Olivier Collet </p><span>August 29, 2022</span> 
+        </div>
+</div>
+<div>
+    <div>
+        <img src="https://unsplash.com/blog/content/images/size/w1600/2022/03/Back-to-basics---Stats--Blog--5.jpg" alt="">
+        </div>
+        <div>
+            <p>Education</p>
+            <h2>How to Boost Your Unsplash Stats</h2>
+            <p>Alex Begin </p><span>August 17, 2022</span> 
+        </div>
+</div>
+<div>
+    <div>
+        <img src="https://unsplash.com/blog/content/images/2022/08/Girls-vs-Stereotypes-c.gif" alt="">
+        </div>
+        <div>
+            <p>Announcements</p>
+            <h2>Girls vs. Stereotypes</h2>
+            <p>Natalie Brennen </p><span>August 15, 2022</span> 
+        </div>
+</div>
+<div>
+    <div>
+        <img src="https://unsplash.com/blog/content/images/size/w1600/2022/08/A-look-back-at-July--Blog-.jpg" alt="">
+        </div>
+        <div>
+            <p>Announcements</p>
+            <h2>A look back on July</h2>
+            <p>Natalie Brennen </p><span>August 10, 2022</span> 
+        </div>
+</div>
+<div>
+    <div>
+        <img src="https://images.unsplash.com/photo-1664575601711-67110e027b9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+        </div>
+        <div>
+            <p>Announcements</p>
+            <h2>Documenting Life’s Moments on Camera</h2>
+            <p>Alex Begin </p><span>July 25, 2022</span> 
+        </div>
+</div>
+<div>
+    <div>
+        <img src="https://unsplash.com/blog/content/images/size/w1600/2022/05/Susan-Wilkinson--Blog--1.jpg" alt="">
+        </div>
+        <div>
+            <p>Community</p>
+            <h2>Meet Susan Wilkinson</h2>
+            <p>Alex Begin </p><span>July 14, 2022</span> 
+        </div>
+</div>
+<div>
+    <div>
+        <img src="https://unsplash.com/blog/content/images/size/w1600/2022/06/A-look-back-at-June--Blog-.jpg" alt="">
+        </div>
+        <div>
+            <p>Announcements</p>
+            <h2>A look back on June</h2>
+            <p>Natalie Brennen </p><span>July 07, 2022</span> 
+        </div>
+</div>
+<div>
+    <div>
+        <img src="https://unsplash.com/blog/content/images/size/w1600/2022/06/DeepMind--Blog--1.jpg" alt="">
+        </div>
+        <div>
+            <p>Announcements</p>
+            <h2>Unsplash ✕ DeepMind</h2>
+            <p>Natalie Brennen </p><span>June 20, 2022</span> 
+        </div>
+</div>
+<div>
+    <div>
+        <img src="https://unsplash.com/blog/content/images/size/w1000/2022/05/Tim-landscape-Canada-1.jpg" alt="">
+        </div>
+        <div>
+            <p>Announcements</p>
+            <h2>Meet the Unsplash Team: Tim Carbone</h2>
+            <p>Natalie Brennen </p><span>June 15, 2022</span> 
+        </div>
+</div>
+<div>
+    <div>
+        <img src="https://unsplash.com/blog/content/images/size/w1600/2022/05/Amy-Shamblen--Blog--1.jpg" alt="">
+        </div>
+        <div>
+            <p>Community</p>
+            <h2>Meet Amy Shamblen</h2>
+            <p>Alex Begin </p><span>June 09, 2022</span> 
+        </div>
+</div>
+<div>
+    <div>
+        <img src="https://unsplash.com/blog/content/images/size/w1600/2022/06/A_look_back_at_May_-Blog-.jpeg" alt="">
+        </div>
+        <div>
+            <p>Announcements</p>
+            <h2>A look back on May</h2>
+            <p>Annie Spratt </p><span>June 07, 2022</span> 
+        </div>
+</div>
+<div>
+    <div>
+        <img src="https://images.unsplash.com/photo-1661152655333-7b5275ad6baa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+        </div>
+        <div>
+            <p>Announcements</p>
+            <h2>Pride in Open Photography</h2>
+            <p>Alex Begin </p><span>June 01, 2022</span> 
+        </div>
+</div>
+</div>
+<div id="more">
+    <button>See More</button></div>
+    <footer>
+        <div>
+            <img src="https://unsplash.com/assets/core/logo-black-df2168ed0c378fa5506b1816e75eb379d06cfcd0af01e07a2eb813ae9b5d7405.svg" alt="">
+        </div>
+       <div>
+        <p>Make Something Awesome</p>
+       </div> 
     
+    </footer>
 </body>
 </html>
