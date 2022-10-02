@@ -95,7 +95,7 @@ getLatestOpenedImg=calcNewImg;
 newImg.onload=function(){
     let windowWidth=window.innerWidth;
     let imgWidth=this.width;
-    let calcImgToEdge=(windowWidth-imgWidth)/2-80;
+    let calcImgToEdge=(windowWidth-imgWidth)/2-50;
 
     let nextBtn=document.querySelector(".img-btn-next");
     nextBtn.style.cssText="right:"+calcImgToEdge+"px;";
