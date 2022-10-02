@@ -55,7 +55,6 @@
             display:grid;
             width:95%;
             height:auto;
-            
             margin:auto;
             grid-template-columns: repeat(3,1fr);
             gap: 20px;
@@ -104,12 +103,70 @@ footer{
    
     align-items: center;
 }
-
+@media all and (max-width: 1100px) and (min-width:601px) {
+    /* Medium Screen Styles  */
+    #gridtab{
+            display:grid;
+            width:95%;
+            height:auto;
+            margin:auto;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+        }
+        #contain{
+            width: 95%;
+            height:auto;
+            margin:auto;
+            display: flex;
+            flex-direction: column;
+        }
+        #contain>div{
+            width:100%;
+            margin: auto;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding:10px;
+            margin-bottom: 200px;
+        }
+        
+}
+@media all and (max-width: 601px) and (min-width:200px) {
+    /* Small Screen Styles  */ 
+    #gridtab{
+            display:grid;
+            width:95%;
+            height:auto;
+            margin:auto;
+            grid-template-columns: repeat(1,1fr);
+            gap: 20px;
+        }
+        #contain{
+            width: 95%;
+            height:auto;
+            margin:auto;
+            display: flex;
+            flex-direction: column;
+        }
+        #contain>div{
+            width:100%;
+            margin: auto;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding:10px;
+            margin-bottom: 200px;
+        }
+        
+        
+}
     </style>
 </head>
 <body>
     <div>
-        <a href="mainpage.html"><img src="https://unsplash.com/assets/core/logo-black-df2168ed0c378fa5506b1816e75eb379d06cfcd0af01e07a2eb813ae9b5d7405.svg" alt=""></a> 
+        <a href="index.html"><img src="https://unsplash.com/assets/core/logo-black-df2168ed0c378fa5506b1816e75eb379d06cfcd0af01e07a2eb813ae9b5d7405.svg" alt=""></a> 
      </div>
 <div id="header">
    <h1>Unsplash Blog</h1>
